@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+<meta charset='UTF-8'>
+<title>ATL000011 – Accès PDF</title>
+<style>
+body { font-family: Arial; padding: 20px; }
+h1 { color: #004a7c; }
+input { padding: 10px; margin-right: 10px; }
+button { padding: 10px; background:#007acc; color:white; border:none; cursor:pointer; }
+</style>
+</head>
+<body>
+<h1>ATL000011 – Accès au PDF</h1>
+<p>Veuillez entrer votre nom :</p>
+<input id='nom' placeholder='Votre nom' />
+<button onclick='acceder()'>Accéder au PDF</button>
+
+<script>
+function acceder() {
+    const nom = document.getElementById('nom').value;
+    if (!nom) { alert('Veuillez entrer votre nom'); return; }
+    window.location.href = "https://winncaregroup-my.sharepoint.com/:b:/g/personal/tarik_najih_winncare_fr/IQBRem4BNGIZR7bl3LcjEEi6AbjTeJnstJeEA6u2H5M_lzA?e=U5rWDQ";
+}
+</script>
+
+</body>
+</html>
